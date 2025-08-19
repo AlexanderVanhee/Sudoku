@@ -15,6 +15,9 @@
 
   <gresource prefix="/io/github/sepehr_rs/Sudoku/illustrations">
     <file preprocess="xml-stripblanks" alias="puzzle-complete-celebration.svg">../data/illustrations/puzzle-complete-celebration.svg</file>
+    <file preprocess="xml-stripblanks" alias="basics.svg">../data/illustrations/basics.svg</file>
+    <file preprocess="xml-stripblanks" alias="rows-and-columns.svg">../data/illustrations/rows-and-columns.svg</file>
+    <file preprocess="xml-stripblanks" alias="blocks.svg">../data/illustrations/blocks.svg</file>
   </gresource>
 
 </gresources>
