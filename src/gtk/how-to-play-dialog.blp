@@ -5,7 +5,6 @@ template $HowToPlayDialog: Adw.Dialog {
     content-height: 500;
     content-width: 600;
     css-classes: ["how-to-play-dialog"];
-
     Adw.ToolbarView {
         [top]
         Adw.HeaderBar {
@@ -13,14 +12,13 @@ template $HowToPlayDialog: Adw.Dialog {
                 carousel: carousel;
             };
         }
-
         Adw.Carousel carousel {
             allow-long-swipes: true;
             allow-scroll-wheel: true;
             spacing: 80;
             Box {
               orientation: vertical;
-              width-request: 400;
+              width-request: 500;
               height-request: 500;
                 Picture {
                     halign: center;
@@ -30,13 +28,12 @@ template $HowToPlayDialog: Adw.Dialog {
                 }
                 Adw.StatusPage {
                   title: _("The Basics");
-                  description: _("The board consists of a 3x3 grid of blocks, each containing its own 3x3 subgrid. The objective is to fill the grid with 1 to 9s.");
+                  description: _("The board consists of a 3x3 grid of blocks, each containing its own 3x3 subgrid. Fill the grid with 1 to 9s.");
                 }
             }
-
             Box {
               orientation: vertical;
-              width-request: 400;
+              width-request: 500;
               height-request: 500;
                 Picture {
                     halign: center;
@@ -49,10 +46,9 @@ template $HowToPlayDialog: Adw.Dialog {
                   description: _("Each row and column must contain unique numbers without duplicates.");
                 }
             }
-
             Box {
               orientation: vertical;
-              width-request: 400;
+              width-request: 500;
               height-request: 500;
                 Picture {
                     halign: center;
@@ -65,13 +61,20 @@ template $HowToPlayDialog: Adw.Dialog {
                   description: _("Each block may only contain one of each number.");
                 }
             }
-
-            Adw.StatusPage {
-                title: _("Mistakes Happen");
-                description: _("Incorrect entries will be highlighted in red.");
-                icon-name: "dialog-error-symbolic";
-                width-request: 400;
-                height-request: 500;
+            Box {
+              orientation: vertical;
+              width-request: 500;
+              height-request: 500;
+                Picture {
+                    halign: center;
+                    valign:center;
+                    vexpand: true;
+                    file: "resource://io/github/sepehr_rs/Sudoku/illustrations/mistake.svg";
+                }
+                Adw.StatusPage {
+                  title: _("Mistakes Happen");
+                  description: _("Incorrect entries will be highlighted in red.");
+                }
             }
         }
     }
