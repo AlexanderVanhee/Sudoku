@@ -26,7 +26,7 @@ from .difficulty_selection_dialog import DifficultySelectionDialog
 from .finished_page import FinishedPage  # noqa: F401 Used in Blueprint
 
 
-@Gtk.Template(resource_path="/io/github/sepehr_rs/Sudoku/window.ui")
+@Gtk.Template(resource_path="/io/github/sepehr_rs/Sudoku/blueprints/window.ui")
 class SudokuWindow(Adw.ApplicationWindow):
     """Main application window."""
 
@@ -101,11 +101,6 @@ class SudokuWindow(Adw.ApplicationWindow):
         self.pencil_toggle_button.set_active(False)
         self.pencil_toggle_button.connect(
             "toggled", self.game_manager.on_pencil_toggled
-        )
-
-        self.finished_page.set_back_button_callback
-        (
-            self.game_manager.on_back_to_menu_clicked_after_finish
         )
 
     def _setup_stack_observer(self):

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/io/github/sepehr_rs/Sudoku">
+    <file alias="style.css">style.css</file>
+    <file alias="style-dark.css">style-dark.css</file>
+    <file>blueprints/window.ui</file>
+    <file>blueprints/help-overlay.ui</file>
+    <file>blueprints/finished-page.ui</file>
+  </gresource>
+
+  <gresource prefix="/io/github/sepehr_rs/Sudoku">
+    <file preprocess="xml-stripblanks">icons/scalable/actions/pencil-symbolic.svg</file>
+  </gresource>
+
+  <gresource prefix="/io/github/sepehr_rs/Sudoku/illustrations">
+    <file preprocess="xml-stripblanks" alias="puzzle-complete-celebration.svg">illustrations/puzzle-complete-celebration.svg</file>
+  </gresource>
+
+</gresources>

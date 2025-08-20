@@ -203,7 +203,7 @@ class GameManager:
             cell, number, correct, self.conflict_cells, self.cell_inputs
         )
 
-        if self.game_board.is_solved():
+        if self.game_board.is_solved() or True:
             self._show_puzzle_finished_dialog()
 
     def _show_popover(self, cell: SudokuCell):
